@@ -1,0 +1,57 @@
+body {
+    font-size: 1.6rem;
+    background-image: url(./../images/main-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 8rem;
+    color: whitesmoke;
+    margin: 0;
+}
+#content {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(0.8);
+
+}
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+   padding: 1% 5%;
+   align-items: center;
+
+}
+.logo {
+    font-size: 3rem;
+}
+.nav {
+    font-size: 1.3rem;
+}
+.nav > ul {
+    list-style: none;
+    display: flex;
+
+}
+.nav li {
+    margin: 0 10px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.nav a:visited {
+    color: aliceblue;
+}
+.main-content {
+    padding: 10% 13%;
+}
+
+.button {
+    border: none;
+    padding: 2% 12%;
+}
