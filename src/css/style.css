@@ -1,12 +1,18 @@
+:root {
+    --white: #e5e5e5;
+    --font1: 'Titan One', cursive;
+    --font2: 'Unna', serif;
+}
 body {
     font-size: 1.6rem;
     background-image: url(./../images/main-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: var(--font2);
 }
 h1 {
     font-size: 5rem;
-    color: whitesmoke;
+    color: var(--white);
     margin: 0;
 }
 #content {
@@ -18,8 +24,9 @@ h1 {
     backdrop-filter: brightness(0.8);
 
 }
+    /* Header */
 .header {
-    color: white;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
    padding: 1% 5%;
@@ -28,6 +35,16 @@ h1 {
 }
 .logo {
     font-size: 3rem;
+    font-family: var(--font2);
+}
+.logo-span2 {
+    font-size: 1.5rem;
+}
+.logo-span {
+    color: chocolate;
+}
+.logo .link-h {
+    cursor: pointer;
 }
 .nav {
     font-size: 1.3rem;
@@ -41,12 +58,21 @@ h1 {
     margin: 0 10px;
 }
 .nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 .nav a:visited {
-    color: aliceblue;
+    color: var(--white);
 }
+.nav a:hover {
+    color: brown;
+}
+.link-active {
+background-color: rgba(210, 105, 30, 0.632);   
+border-radius: 50%;
+ font-size: 1.4rem;
+}
+    /* Home page */
 .main-content {
     padding: 10% 13%;
 }
@@ -54,4 +80,52 @@ h1 {
 .button {
     border: none;
     padding: 2% 12%;
+    cursor: pointer;
+}
+.button:hover {
+    border: 1px solid rgba(123, 123, 255, 0.606);
+
+}
+    /* Menu */
+.menu h2 {
+    text-align: center;
+}
+.main-menu {
+    display: flex;
+    color: var(--white);
+    margin: 0 10%;
+    padding: 4% 13%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    
+    
+}
+.menu {
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-row:first-child {
+    text-align: left;
+}
+.menu-row:last-child {
+    text-align: right;
+}
+.menu-list {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.769);
+    max-height: 300px;
+    overflow: overlay;
+}
+
+    /* About */
+.main-about {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: rgba(210, 105, 30, 0.813);
+    color: var(--white);
+    padding: 3%;
 }
